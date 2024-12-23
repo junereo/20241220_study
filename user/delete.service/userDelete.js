@@ -1,15 +1,7 @@
 const {userList} = require("../list.service/userList.js");
 
 const userDelete = (userId ) =>{
-
-    let index = 0;
-    for(let i = 0; i < userList.length; i++){
-        if(userList[i].userId === userId){
-            index = i;
-            break;
-        }
-    }
-
+    let index = userList.findIndex(user => user.userId === userId);
     return userList.splice(index, 1);
 }
 

@@ -1,14 +1,7 @@
 const {userList} = require("../list.service/userList.js");
 
 const userModify= (userId, name ) =>{
-
-    let index = 0;
-    for(let i = 0; i < userList.length; i++){
-        if(userList[i].userId === userId){
-            index = i;
-            break;
-        }
-    }
+    let index = userList.findIndex(user => user.userId === userId);
     const userInfo = {
         userId: userId,
         name: name
