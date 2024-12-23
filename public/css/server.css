@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.content{
+    width: 100%;
+    border: 1px solid black;
+}
+
+.content-row{
+    max-width: 600px;
+    height: 100px;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+
+.content-row-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid gray;
+}
